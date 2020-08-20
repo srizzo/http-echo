@@ -22,3 +22,6 @@ jobs:
       - run2:
           name: run2
           command: echo hello world
+      - run3:
+          name: run3
+          command: echo hello world
