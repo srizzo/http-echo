@@ -3,7 +3,8 @@ version: 2.1
 # Use a package of configuration called an orb.
 orbs:
   # Declare a dependency on the welcome-orb
-#  welcome: circleci/welcome-orb@0.4.1
+  aws-ecr: circleci/aws-ecr@6.12.2
+  welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
@@ -26,3 +27,5 @@ jobs:
       - run:
           name: run3
           command: echo hello world
+      - aws-ecr/build-image:
+          repo: 253354844018.dkr.ecr.us-east-1.amazonaws.com/http-echo
