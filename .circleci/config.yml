@@ -20,9 +20,9 @@ jobs:
       - run:
           name: run
           command: echo hello world
-      - run2:
+      - run:
           name: run2
           command: echo hello world
-      - run3:
+      - run:
           name: run3
           command: echo hello world
