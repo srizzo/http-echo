@@ -18,6 +18,7 @@ jobs:
     machine: true
     working_directory: ~/repo
     steps:
+      - checkout
       - run:
           name: run
           command: echo hello world
