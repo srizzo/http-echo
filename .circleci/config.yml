@@ -19,3 +19,6 @@ jobs:
       - run:
           name: run
           command: echo hello world
+      - run2:
+          name: run2
+          command: echo hello world
