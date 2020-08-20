@@ -28,4 +28,5 @@ jobs:
           name: run3
           command: echo hello world
       - aws-ecr/build-image:
-          repo: 253354844018.dkr.ecr.us-east-1.amazonaws.com/http-echo
+          account-url: 253354844018.dkr.ecr.us-east-1.amazonaws.com
+          repo: http-echo
